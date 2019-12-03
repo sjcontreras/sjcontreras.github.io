@@ -1,0 +1,39 @@
+header {
+	background-color: #FFED74;
+}
+nav {
+	background-color: #E8C66A;
+}
+section {
+	background-color: #FFE2B8;
+}
+footer {
+	background-color: #FF957E;
+}
+h1{
+	font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	font-family: 'Domine', serif;
+}
+
+a {
+	font-family: 'Poppins', sans-serif;
+}
+
+nav {
+	font-family: 'Poppins', sans-serif;
+}
+
+footer {
+	font-family: 'Domine', serif;
+}
