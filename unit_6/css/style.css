@@ -9,13 +9,23 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+  background-color: #e6e6e6;
+}
+
 #logo {
 	height: 45px;
 	width: 90px;
 }
+
+nav {
+	padding-bottom: 2.5em;
+}
+
 nav a {
 	float: right;
 	color: #808080;
+	margin: 1em;
 }
 
 h1 {
@@ -49,6 +59,13 @@ p {
 .team {
 	font-family: 'Questrial', sans-serif;
 	text-align: center;
+	background-image: url(https://dcgcommunications.com/wp-content/uploads/2017/10/Work_slider.jpg);
+	color: #F8F8FF;
+}
+
+.team a {
+	margin: 1em;
+	color: #F8F8FF;
 }
 
 footer {
@@ -65,4 +82,5 @@ footer img {
 footer a {
 	color: #F8F8FF;
 	float: left;
+	margin: 1em;
 }
