@@ -2,32 +2,15 @@
 	margin: 0;
 	padding: 0;
 }
-
-h1 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 2em;
-	padding-bottom: 1em;
-}
-h1:before{
-	content:"";
-	display: block;
-	width: 1em;
-	height: .2em;
-	background: white;
-	position: top;
-	margin-bottom: 1em;	
-}
-
 header{
 	font-family: 'Roboto Condensed', sans-serif;
 	margin-top: 1em;
 }
-
 nav{
 	float: right; 
 	display: inline-block;
 }
-nav a{
+nav a{ 
 	text-decoration: none;
 	color: #666666;
 	margin: .5em;
@@ -43,6 +26,20 @@ nav a:hover{
 	padding-left: 2em;
 }
 
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	padding-bottom: 1em;
+}
+h1:before{
+	content:"";
+	display: block;
+	width: 1em;
+	height: .2em;
+	background: white;
+	position: top;
+	margin-bottom: 1em;	
+}
 #about{
 	background-image: url(https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	background-repeat: no-repeat;
@@ -115,7 +112,7 @@ padding-left: 4em;
 }
 #strategic3{
 	float: right;
-	padding-top: 2em;
+	padding-top: 0em;
 	padding-bottom: 3em;
 	padding-right: 4em;
 	padding-left: 0;
@@ -146,7 +143,7 @@ padding-right: 4em;
 }
 #outreach3{
 	float: left;
-	padding-top: 3em;
+	padding-top: 1em;
 	padding-bottom: 2em;
 	padding-right: 0em;
 	padding-left: 4em;
@@ -177,7 +174,7 @@ padding-left: 4em;
 }
 #marketing3{
 	float: right;
-	padding-top: 2em;
+	padding-top: 1em;
 	padding-bottom: 3em;
 	padding-right: 4em;
 	padding-left: 0;
@@ -208,7 +205,7 @@ padding-right: 4em;
 }
 #research3{
 	float: left;
-	padding-top: 3em;
+	padding-top: 0em;
 	padding-bottom: 2em;
 	padding-right: 0em;
 	padding-left: 4em;
