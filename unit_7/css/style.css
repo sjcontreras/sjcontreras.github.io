@@ -6,27 +6,41 @@
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
-	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+h1:before{
+	content:"";
+	display: block;
+	width: 1em;
+	height: .2em;
+	background: white;
+	position: top;
+	margin-bottom: 1em;	
 }
 
-p{
-	font-family: 'Roboto Condensed', sans-serif;
-}
 header{
 	font-family: 'Roboto Condensed', sans-serif;
+	margin-top: 1em;
 }
 
 nav{
-	float: right;
-	border: 2em;
+	float: right; 
+	display: inline-block;
 }
 nav a{
 	text-decoration: none;
 	color: #666666;
-	padding: .5em;
+	margin: .5em;
+	padding: 1em;
+	transition: 0.6s ease;
+}
+nav a:hover{
+	text-decoration: underline;
+	text-decoration-color: #007acc;
 }
 #logo{
 	width: 5.5em;
+	padding-left: 2em;
 }
 
 #about{
@@ -34,20 +48,174 @@ nav a{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-bottom: 2em;
+	border: 2em;
+	margin-bottom:2em;
+	margin-left: 0em;
+	margin-top: 0;
+	margin-right: 0;
 	height: 20em;
-	padding: 1em;
+	padding: 2em;
 }
 #story{
 	position: relative;
 	float: right;
-	padding: 1em;
-	margin: 1em;
+	padding: 2em;
 	border: 1em;
-	width: 20em;
+	width: 25em;
 	height: 20em;
 	background: #007acc;
-	color: #ffffff
-	background-color: none;
 	color: white;
+}
+#story p{
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-bottom: 3em;\
+}
+
+#story a{
+	text-decoration: none;
+	color: white;
+	border-color: white;
+	border: solid;
+	box-sizing: border-box;
+	margin-top: 2em;
+	padding: .5em;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#story a:hover{
+	color: #007acc;
+	background: white;
+}
+#work {
+	color: #666666;
+	font-size: 3em;
+	font-family: 'Roboto', sans-serif;
+	border: 2em;
+	padding-left: .5em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+	padding-top: 1em;
+}
+#strategic{
+	float: left;
+	display: inline-block;
+	border: 2em;
+}
+#strategic1{ 
+float: left;
+width: 20em;
+height: auto;
+padding-left: 4em;
+}
+#strategic2{
+	float: left;
+	background: #007acc;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	padding: 1em;
+}
+#strategic3{
+	float: right;
+	padding-top: 2em;
+	padding-bottom: 3em;
+	padding-right: 4em;
+	padding-left: 0;
+	margin: 2em;
+	width: 20em;
+	height: auto;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #404040;
+}
+#outreach{
+	float: right;
+	display: inline-block;
+	border: 2em;
+}
+#outreach1{ 
+float: right;
+width: 20em;
+height: auto;
+padding-right: 4em;
+}
+#outreach2{
+	float: right;
+	background: #007acc;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	padding: 1em;
+}
+#outreach3{
+	float: left;
+	padding-top: 3em;
+	padding-bottom: 2em;
+	padding-right: 0em;
+	padding-left: 4em;
+	margin: 2em;
+	width: 20em;
+	height: auto;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #404040;
+}
+#marketing{
+	float: left;
+	display: inline-block;
+	border: 2em;
+}
+#marketing1{ 
+float: left;
+width: 20em;
+height: auto;
+padding-left: 4em;
+}
+#marketing2{
+	float: left;
+	background: #007acc;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	padding: 1em;
+}
+#marketing3{
+	float: right;
+	padding-top: 2em;
+	padding-bottom: 3em;
+	padding-right: 4em;
+	padding-left: 0;
+	margin: 2em;
+	width: 20em;
+	height: auto;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #404040;
+}
+#research{
+	float: right;
+	display: inline-block;
+	border: 2em;
+}
+#research1{ 
+float: right;
+width: 20em;
+height: auto;
+padding-right: 4em;
+}
+#research2{
+	float: right;
+	background: #007acc;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	padding: 1em;
+}
+#research3{
+	float: left;
+	padding-top: 3em;
+	padding-bottom: 2em;
+	padding-right: 0em;
+	padding-left: 4em;
+	margin: 2em;
+	width: 20em;
+	height: auto;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #404040;
 }
