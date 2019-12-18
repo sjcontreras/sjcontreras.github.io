@@ -86,7 +86,7 @@ h1:before{
 	color: #666666;
 	font-size: 3em;
 	font-family: 'Roboto', sans-serif;
-	text-decoration: underline;
+	text-shadow: 2px 2px #cccccc;
 	border: 2em;
 	padding-left: 1.2em;
 	padding-bottom: 1em;
