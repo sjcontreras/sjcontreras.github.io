@@ -1,6 +1,12 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
 }
 header{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -13,30 +19,31 @@ nav{
 nav a{ 
 	text-decoration: none;
 	color: #666666;
-	margin: .5em;
-	padding: 1em;
+	display: inline;
+	border-spacing: 
+	border-bottom: 2px solid rgba(0,0,0,0);
+	margin: 1em;
+	padding-bottom: 1em;
 	transition: 0.6s ease;
 }
 nav a:hover{
-	text-decoration: underline;
-	text-decoration-color: #007acc;
+	border-bottom: 3px solid #007acc;
 }
 #logo{
 	width: 5.5em;
-	padding-left: 1em;
+	position: relative;
+	bottom: .5em;
 }
 
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
-	padding-bottom: 1em;
 }
 h1:before{
-	content:"";
+	content:"\2014";
 	display: block;
 	width: 1em;
 	height: .2em;
-	background: white;
 	position: top;
 	margin-bottom: 1em;	
 }
@@ -50,170 +57,321 @@ h1:before{
 	margin-left: 0em;
 	margin-top: 0;
 	margin-right: 0;
-	height: 20em;
-	padding: 2em;
+	height: 30em;
 }
 #story{
 	position: relative;
+	top: 2em;
+	right: 2em;
 	float: right;
 	padding: 2em;
 	border: 1em;
 	width: 25em;
-	height: 20em;
+	height: 100%;
 	background: #007acc;
 	color: white;
 }
 #story p{
 	font-family: 'Roboto Condensed', sans-serif;
-	margin-bottom: 3em;\
+	margin-top: 2em;
+	margin-bottom: 4em;
 }
 
 #story a{
 	text-decoration: none;
 	color: white;
 	border-color: white;
-	border: solid;
+	border: 1px solid rgb(255,255,255);
 	box-sizing: border-box;
-	margin-top: 2em;
-	padding: .5em;
+	padding: 1em;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 #story a:hover{
-	color: #007acc;
+	color: rgba(0,122,204,1);
 	background: white;
 }
 #work {
-	color: #666666;
-	font-size: 3em;
+	position: relative;
+	text-align: right;
+	margin-top: 1em;
+	margin-right: 2em;
+	color: rgba(102,102,102,.58);
+	font-size: 5em;
 	font-family: 'Roboto', sans-serif;
-	text-shadow: 2px 2px #cccccc;
+	opacity: 40%;
 	border: 2em;
-	padding-left: 1.2em;
-	padding-bottom: 1em;
-	padding-right: 2em;
-	padding-top: 1em;
 }
 #strategic{
+	margin-top: 2em;
 	float: left;
-	display: inline-block;
+	display: inline;
 	border: 2em;
 }
 #strategic1{ 
-float: left;
-width: 20em;
-height: auto;
-padding-left: 4em;
+	position: relative;
+	float: left;
+	width: 25em;
+	height: auto;
+	margin-left: 1.5em;
+	padding-left: 2em;
+}
+#strategic1:hover{
+	  transform: scale(1.1);
 }
 #strategic2{
+	position: relative;
+	right: 13em;
+	top: -1em;
+	padding: .5em;
 	float: left;
-	background: #007acc;
+	background: rgba(0,122,204,.58);
+	box-shadow: 2px 2px 3px rgba(121,182,222,1);
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	padding: 1em;
+}
+#strategic3:before{
+	content: "\2014";
+	display: block;
+	width: 1em;
+	height: .2em;
+	color: #007acc;
+	position: relative;
+	left: 8em;
+	margin-bottom: 1em;	
 }
 #strategic3{
-	float: right;
-	padding-top: 0em;
-	padding-bottom: 3em;
-	padding-right: 4em;
-	padding-left: 0;
-	margin: 2em;
+	position: relative;
+	top: -1.5em;
+	right: 10em;
+	float: left;
 	width: 20em;
 	height: auto;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #404040;
+	background: rgba(149,149,149,.06);
+	margin: 1em;
+	padding: 1em;
 }
 #outreach{
+	margin-top: 2em;
 	float: right;
-	display: inline-block;
+	display: inline;
 	border: 2em;
 }
 #outreach1{ 
-float: right;
-width: 20em;
-height: auto;
-padding-right: 4em;
+	position: relative;
+	float: right;
+	width: 25em;
+	height: auto;
+	margin-right: 1.5em;
+	padding-right: 2em;
+}
+#outreach1:hover{
+	  transform: scale(1.1);
 }
 #outreach2{
+	position: relative;
+	left: 5em;
+	top: -1em;
+	padding: .5em;
 	float: right;
-	background: #007acc;
+	background: rgba(0,122,204,.58);
+	box-shadow: 2px 2px 3px rgba(121,182,222,1);
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	padding: 1em;
+}
+#outreach3:before{
+	content: "\2014";
+	display: block;
+	width: 1em;
+	height: .2em;
+	color: #007acc;
+	position: relative;
+	left: 8em;
+	margin-bottom: 1em;	
 }
 #outreach3{
-	float: left;
-	padding-top: 1em;
-	padding-bottom: 2em;
-	padding-right: 0em;
-	padding-left: 4em;
-	margin: 2em;
+	position: relative;
+	top: -1.5em;
+	left: 3.5em;
+	float: right;
 	width: 20em;
 	height: auto;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #404040;
+	background-color: rgba(149,149,149,.06);
+	margin: 1em;
+	padding: 1em;
 }
 #marketing{
+	margin-top: 2em;
 	float: left;
-	display: inline-block;
+	display: inline;
 	border: 2em;
 }
 #marketing1{ 
-float: left;
-width: 20em;
-height: auto;
-padding-left: 4em;
+	position: relative;
+	float: left;
+	width: 25em;
+	height: auto;
+	margin-left: 1.5em;
+	padding-left: 2em;
+}
+#marketing1:hover{
+	  transform: scale(1.1);
 }
 #marketing2{
+	position: relative;
+	right: 5em;
+	top: -1em;
+	padding: .5em;
 	float: left;
-	background: #007acc;
+	background: rgba(0,122,204,.58);
+	box-shadow: 2px 2px 3px rgba(121,182,222,1);
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	padding: 1em;
+}
+#marketing3:before{
+	content: "\2014";
+	display: block;
+	width: 1em;
+	height: .2em;
+	color: #007acc;
+	position: relative;
+	left: 8em;
+	margin-bottom: 1em;	
 }
 #marketing3{
-	float: right;
-	padding-top: 1em;
-	padding-bottom: 3em;
-	padding-right: 4em;
-	padding-left: 0;
-	margin: 2em;
+	position: relative;
+	top: -1.5em;
+	right: 3.65em;
+	float: left;
 	width: 20em;
 	height: auto;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #404040;
+	background-color: #95959521;
+	margin: 1em;
+	padding: 1em;
 }
 #research{
+	margin-top: 2em;
 	float: right;
-	display: inline-block;
+	display: inline;
 	border: 2em;
 }
 #research1{ 
-float: right;
-width: 20em;
-height: auto;
-padding-right: 4em;
+	position: relative;
+	float: right;
+	width: 25em;
+	height: auto;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+	padding-right: 2em;
+}
+#research1:hover{
+	  transform: scale(1.1);
 }
 #research2{
+	position: relative;
+	left: 11em;
+	top: -1em;
+	padding: .5em;
 	float: right;
-	background: #007acc;
+	background: rgba(0,122,204,.58);
+	box-shadow: 2px 2px 3px rgba(121,182,222,1);
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	padding: 1em;
+}
+#research3:before{
+	content: "\2014";
+	display: block;
+	width: 1em;
+	height: .2em;
+	color: #007acc;
+	position: relative;
+	left: 8em;
+	margin-bottom: 1em;	
 }
 #research3{
-	float: left;
-	padding-top: 0em;
-	padding-bottom: 2em;
-	padding-right: 0em;
-	padding-left: 4em;
-	margin: 2em;
+	position: relative;
+	top: -1.5em;
+	left: 8.5em;
+	float: right;
 	width: 20em;
 	height: auto;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #404040;
+	background-color: rgba(149,149,149,.06);
+	margin: 1em;
+	padding: 1em;
+}
+#team1{
+	position: relative;
+	background-image: url(https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: 2em;
+	margin-bottom:2em;
+	margin-left: 0em;
+	margin-top: 2em;
+	margin-right: 0;
+	height: 19em;
+}
+#team2{
+	float: left;
+	position: relative;
+	left: 3em;
+	text-align: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3em;
+	margin-bottom: 1em;
+	padding: 1em;
+	height: 100%;
+	width: auto;
+	background: rgba(0,122,204,.81);
+}
+#team3{
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 8em;
+	right: 16.5em;
+}
+}
+#team3 a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#team3 a{
+	text-decoration: none;
+	color: white;
+	border-color: white;
+	border: 1px solid rgb(255,255,255);
+	box-sizing: border-box;
+	padding: 1em;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 1em;
+}
+#team3 a:hover{
+	color: rgba(0,122,204,1);
+	background: white;
+}
+footer{
+	background: rgba(181,181,181,1);
+}
+footer a {
+	text-decoration: none;
+}
+#footerright{
+	float: right;
+	width: auto;
+	height: 1em;
 }
