@@ -69,7 +69,7 @@ h1:before{
 	width: 25em;
 	height: 100%;
 	background: #007acc;
-	color: white;
+	color: rgba(255,255,255,1);
 }
 #story p{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -79,8 +79,8 @@ h1:before{
 
 #story a{
 	text-decoration: none;
-	color: white;
-	border-color: white;
+	color: rgba(255,255,255,1);
+	border-color: rgba(255,255,255,1);
 	border: 1px solid rgb(255,255,255);
 	box-sizing: border-box;
 	padding: 1em;
@@ -88,14 +88,15 @@ h1:before{
 }
 #story a:hover{
 	color: rgba(0,122,204,1);
-	background: white;
+	background: rgba(255,255,255,1);
 }
 #work {
 	position: relative;
 	text-align: right;
 	margin-top: 1em;
 	margin-right: 2em;
-	color: rgba(102,102,102,.58);
+	color: rgba(102,102,102,.32);
+	text-shadow: 1px 1px .5px rgba(102,102,102,.50);
 	font-size: 5em;
 	font-family: 'Roboto', sans-serif;
 	opacity: 40%;
@@ -126,7 +127,7 @@ h1:before{
 	float: left;
 	background: rgba(0,122,204,.58);
 	box-shadow: 2px 2px 3px rgba(121,182,222,1);
-	color: white;
+	color: rgba(255,255,255,1);
 	font-family: 'Roboto', sans-serif;
 }
 #strategic3:before{
@@ -148,7 +149,7 @@ h1:before{
 	height: auto;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
-	color: #404040;
+	color: rgba(64,64,64,1);
 	background: rgba(149,149,149,.06);
 	margin: 1em;
 	padding: 1em;
@@ -178,7 +179,7 @@ h1:before{
 	float: right;
 	background: rgba(0,122,204,.58);
 	box-shadow: 2px 2px 3px rgba(121,182,222,1);
-	color: white;
+	color: rgba(255,255,255,1);
 	font-family: 'Roboto', sans-serif;
 }
 #outreach3:before{
@@ -200,7 +201,7 @@ h1:before{
 	height: auto;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
-	color: #404040;
+	color: rgba(64,64,64,1);
 	background-color: rgba(149,149,149,.06);
 	margin: 1em;
 	padding: 1em;
@@ -230,7 +231,7 @@ h1:before{
 	float: left;
 	background: rgba(0,122,204,.58);
 	box-shadow: 2px 2px 3px rgba(121,182,222,1);
-	color: white;
+	color: rgba(255,255,255,1);
 	font-family: 'Roboto', sans-serif;
 }
 #marketing3:before{
@@ -252,7 +253,7 @@ h1:before{
 	height: auto;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
-	color: #404040;
+	color: rgba(64,64,64,1);
 	background-color: #95959521;
 	margin: 1em;
 	padding: 1em;
@@ -283,7 +284,7 @@ h1:before{
 	float: right;
 	background: rgba(0,122,204,.58);
 	box-shadow: 2px 2px 3px rgba(121,182,222,1);
-	color: white;
+	color: rgba(255,255,255,1);
 	font-family: 'Roboto', sans-serif;
 }
 #research3:before{
@@ -305,7 +306,7 @@ h1:before{
 	height: auto;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
-	color: #404040;
+	color: rgba(64,64,64,1);
 	background-color: rgba(149,149,149,.06);
 	margin: 1em;
 	padding: 1em;
@@ -328,7 +329,7 @@ h1:before{
 	position: relative;
 	left: 3em;
 	text-align: center;
-	color: white;
+	color: rgba(255,255,255,1);
 	font-family: 'Roboto', sans-serif;
 	font-size: 3em;
 	margin-bottom: 1em;
@@ -347,13 +348,13 @@ h1:before{
 }
 #team3 a{
 	text-decoration: none;
-	color: white;
+	color: rgba(255,255,255,1);
 	font-family: 'Roboto Condensed', sans-serif;
 }
 #team3 a{
 	text-decoration: none;
-	color: white;
-	border-color: white;
+	color: rgba(255,255,255,1);
+	border-color: rgba(255,255,255,1);
 	border: 1px solid rgb(255,255,255);
 	box-sizing: border-box;
 	padding: 1em;
@@ -362,12 +363,12 @@ h1:before{
 }
 #team3 a:hover{
 	color: rgba(0,122,204,1);
-	background: white;
+	background: rgba(255,255,255,1);
 }
 footer{
 	position: relative;
 	bottom: 2em;
-	background: rgba(181,181,181,1);
+	background-color: rgba(181,181,181,1);
 	width: 100%
 	height: 10em;
 	padding: 2em;
@@ -378,6 +379,7 @@ footer{
 footer a {
 	position: relative;
 	bottom: 1em;
+	right: 8.5em;
 	text-decoration: none;
 	color: rgba(255,255,255,1);
 	margin: 1em;
@@ -385,9 +387,19 @@ footer a {
 #footerleft{
 	float: left;
 }
+#footer1{
+	position: relative;
+	top: 1em;
+	left: 3em;
+	float: left;
+	padding-bottom: 3em;
+	width: 10em;
+	height: auto;
+}
 footer img{
 	position: relative;
 	bottom: 1em;
+	left: 4em;
 	float: right;
 	margin: .5em;
 	width: 40px;
@@ -395,9 +407,6 @@ footer img{
 }
 footer p{
 	position: relative;
-	top: 3em;
-	left: 5.5em;
-}
-footer a:hover{
-	color: rgba(0,122,204,.58;
+	top: 6.3em;
+	left: 2em;
 }
