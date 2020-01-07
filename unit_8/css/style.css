@@ -2,7 +2,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+body{
 	font-size: 16px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 .clearfix:after{
 	content: "";
@@ -10,21 +13,20 @@
 	display: block;
 }
 header{
+	position: relative;
 	font-family: 'Roboto Condensed', sans-serif;
 	margin-top: 1em;
 }
 nav{
 	float: right; 
-	display: inline-block;
 }
 nav a{ 
 	text-decoration: none;
 	color: #666666;
-	display: inline;
-	border-spacing: 
-	border-bottom: 2px solid rgba(0,0,0,0);
-	margin: 1em;
-	padding-bottom: 1em;
+	display: inline-block;
+	border-bottom: 3px solid rgba(0,0,0,0);
+	padding: 1em .25em;
+	margin-right: 1em;
 	transition: 0.6s ease;
 }
 nav a:hover{
@@ -32,10 +34,11 @@ nav a:hover{
 }
 #logo{
 	width: 5.5em;
-	position: relative;
-	bottom: .5em;
+	position:absolute;
+	top:50%;
+	left:1em;
+	transform:translateY(-50%);
 }
-
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
@@ -44,8 +47,6 @@ h1:before{
 	content:"\2014";
 	display: block;
 	width: 1em;
-	height: .2em;
-	position: top;
 	margin-bottom: 1em;	
 }
 #about{
@@ -53,361 +54,75 @@ h1:before{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	border: 2em;
-	margin-bottom:2em;
-	margin-left: 0em;
-	margin-top: 0;
-	margin-right: 0;
-	height: 30em;
+	margin-bottom:2em
 }
 #story{
-	position: relative;
-	top: 2em;
-	right: 2em;
 	float: right;
 	padding: 2em;
-	border: 1em;
-	width: 25em;
-	height: 100%;
 	background: #007acc;
 	color: rgba(255,255,255,1);
+	width: 33.33%;
+	position: relative;
+	top: 4em;
+	right: 4em;
 }
 #story p{
-	font-family: 'Roboto Condensed', sans-serif;
 	margin-top: 2em;
 	margin-bottom: 4em;
 }
-
 #story a{
 	text-decoration: none;
 	color: rgba(255,255,255,1);
-	border-color: rgba(255,255,255,1);
 	border: 1px solid rgb(255,255,255);
-	box-sizing: border-box;
 	padding: 1em;
-	font-family: 'Roboto Condensed', sans-serif;
+	display: inline-block;
 }
 #story a:hover{
 	color: rgba(0,122,204,1);
 	background: rgba(255,255,255,1);
 }
-#work {
+#ourworkheader{
 	position: relative;
 	text-align: right;
 	margin-top: 1em;
 	margin-right: 2em;
 	color: rgba(102,102,102,.32);
-	text-shadow: 1px 1px .5px rgba(102,102,102,.50);
 	font-size: 5em;
 	font-family: 'Roboto', sans-serif;
 	opacity: 40%;
 	border: 2em;
 }
-#strategic{
-	margin-top: 2em;
-	float: left;
-	display: inline;
-	border: 2em;
-}
-#strategic1{ 
+.ourworkdetails{
 	position: relative;
-	float: left;
-	width: 25em;
-	height: auto;
-	margin-left: 1.5em;
-	padding-left: 2em;
 }
-#strategic1:hover{
-	  transform: scale(1.1);
-}
-#strategic2{
-	position: relative;
-	right: 13em;
-	top: -1em;
-	padding: .5em;
-	float: left;
-	background: rgba(0,122,204,.58);
-	box-shadow: 2px 2px 3px rgba(121,182,222,1);
-	color: rgba(255,255,255,1);
-	font-family: 'Roboto', sans-serif;
-}
-#strategic3:before{
-	content: "\2014";
-	display: block;
-	width: 1em;
-	height: .2em;
-	color: #007acc;
-	position: relative;
-	left: 8em;
-	margin-bottom: 1em;	
-}
-#strategic3{
-	position: relative;
-	top: -1.5em;
-	right: 10em;
-	float: left;
-	width: 20em;
-	height: auto;
-	font-size: 1.5em;
-	font-family: 'Roboto Condensed', sans-serif;
+.ourworkdetails img{
+	width: 30%;
 	color: rgba(64,64,64,1);
-	background: rgba(149,149,149,.06);
-	margin: 1em;
-	padding: 1em;
 }
-#outreach{
-	margin-top: 2em;
-	float: right;
-	display: inline;
-	border: 2em;
-}
-#outreach1{ 
-	position: relative;
-	float: right;
-	width: 25em;
-	height: auto;
-	margin-right: 1.5em;
-	padding-right: 2em;
-}
-#outreach1:hover{
+.ourworkdetails img:hover{
 	  transform: scale(1.1);
 }
-#outreach2{
-	position: relative;
-	left: 5em;
-	top: -1em;
+.ourworkdetails h3{
+	position: absolute;
+	right: 1em;
 	padding: .5em;
-	float: right;
 	background: rgba(0,122,204,.58);
 	box-shadow: 2px 2px 3px rgba(121,182,222,1);
 	color: rgba(255,255,255,1);
 	font-family: 'Roboto', sans-serif;
 }
-#outreach3:before{
-	content: "\2014";
+.ourworkdetails p:before{
 	display: block;
-	width: 1em;
-	height: .2em;
+	content: "\2014";
+	width: 10%;
 	color: #007acc;
-	position: relative;
-	left: 8em;
-	margin-bottom: 1em;	
 }
-#outreach3{
-	position: relative;
-	top: -1.5em;
-	left: 3.5em;
+.ourworkdetails p{
 	float: right;
-	width: 20em;
-	height: auto;
+	width: 40%;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: rgba(64,64,64,1);
 	background-color: rgba(149,149,149,.06);
 	margin: 1em;
-	padding: 1em;
-}
-#marketing{
-	margin-top: 2em;
-	float: left;
-	display: inline;
-	border: 2em;
-}
-#marketing1{ 
-	position: relative;
-	float: left;
-	width: 25em;
-	height: auto;
-	margin-left: 1.5em;
-	padding-left: 2em;
-}
-#marketing1:hover{
-	  transform: scale(1.1);
-}
-#marketing2{
-	position: relative;
-	right: 5em;
-	top: -1em;
-	padding: .5em;
-	float: left;
-	background: rgba(0,122,204,.58);
-	box-shadow: 2px 2px 3px rgba(121,182,222,1);
-	color: rgba(255,255,255,1);
-	font-family: 'Roboto', sans-serif;
-}
-#marketing3:before{
-	content: "\2014";
-	display: block;
-	width: 1em;
-	height: .2em;
-	color: #007acc;
-	position: relative;
-	left: 8em;
-	margin-bottom: 1em;	
-}
-#marketing3{
-	position: relative;
-	top: -1.5em;
-	right: 3.65em;
-	float: left;
-	width: 20em;
-	height: auto;
-	font-size: 1.5em;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: rgba(64,64,64,1);
-	background-color: #95959521;
-	margin: 1em;
-	padding: 1em;
-}
-#research{
-	margin-top: 2em;
-	float: right;
-	display: inline;
-	border: 2em;
-}
-#research1{ 
-	position: relative;
-	float: right;
-	width: 25em;
-	height: auto;
-	margin-right: 1.5em;
-	margin-bottom: 1em;
-	padding-right: 2em;
-}
-#research1:hover{
-	  transform: scale(1.1);
-}
-#research2{
-	position: relative;
-	left: 11em;
-	top: -1em;
-	padding: .5em;
-	float: right;
-	background: rgba(0,122,204,.58);
-	box-shadow: 2px 2px 3px rgba(121,182,222,1);
-	color: rgba(255,255,255,1);
-	font-family: 'Roboto', sans-serif;
-}
-#research3:before{
-	content: "\2014";
-	display: block;
-	width: 1em;
-	height: .2em;
-	color: #007acc;
-	position: relative;
-	left: 8em;
-	margin-bottom: 1em;	
-}
-#research3{
-	position: relative;
-	top: -1.5em;
-	left: 8.5em;
-	float: right;
-	width: 20em;
-	height: auto;
-	font-size: 1.5em;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: rgba(64,64,64,1);
-	background-color: rgba(149,149,149,.06);
-	margin: 1em;
-	padding: 1em;
-}
-#team1{
-	position: relative;
-	background-image: url(https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	border: 2em;
-	margin-left: 0em;
-	margin-top: 2em;
-	margin-right: 0;
-	height: 19em;
-	padding-bottom: 0;
-}
-#team2{
-	float: left;
-	position: relative;
-	bottom: 1em;
-	left: 3em;
-	text-align: center;
-	color: rgba(255,255,255,1);
-	font-family: 'Roboto', sans-serif;
-	font-size: 3em;
-	margin-bottom: 1em;
-	padding: 1em;
-	height: 116%;
-	width: auto;
-	background: rgba(0,122,204,.81);
-}
-#team3{
-	text-align: center;
-	float: left;
-	position: relative;
-	top: 8em;
-	right: 16.5em;
-}
-}
-#team3 a{
-	text-decoration: none;
-	color: rgba(255,255,255,1);
-	font-family: 'Roboto Condensed', sans-serif;
-}
-#team3 a{
-	text-decoration: none;
-	color: rgba(255,255,255,1);
-	border-color: rgba(255,255,255,1);
-	border: 1px solid rgb(255,255,255);
-	box-sizing: border-box;
-	padding: 1em;
-	font-family: 'Roboto Condensed', sans-serif;
-	margin: 1em;
-}
-#team3 a:hover{
-	color: rgba(0,122,204,1);
-	background: rgba(255,255,255,1);
-}
-footer{
-	position: relative;
-	background-color: rgba(14,14,14,.52);
-	width: 100%
-	height: 10em;
-	padding: 2em;
-	text-align: center;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: rgba(255,255,255,1);
-}
-footer a {
-	position: relative;
-	bottom: 1em;
-	right: 8.5em;
-	text-decoration: none;
-	color: rgba(255,255,255,1);
-	margin: 1em;
-}
-#footerleft{
-	float: left;
-}
-#footer1{
-	position: relative;
-	top: 1em;
-	left: 3em;
-	float: left;
-	padding-bottom: 3em;
-	width: 10em;
-	height: auto;
-}
-footer img{
-	position: relative;
-	bottom: 1em;
-	left: 4em;
-	float: right;
-	margin: .5em;
-	width: 40px;
-	height: auto;
-}
-footer p{
-	position: relative;
-	top: 6.3em;
-	left: 2em;
 }
