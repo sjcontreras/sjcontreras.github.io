@@ -39,7 +39,7 @@ nav a:hover{
 	left:1em;
 	transform:translateY(-50%);
 }
-h1 {
+h1{
 	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
 }
@@ -83,19 +83,17 @@ h1:before{
 }
 #ourworkheader{
 	position: relative;
-	text-align: right;
-	margin-top: 1em;
-	margin-right: 2em;
+	text-align: left;
 	color: rgba(102,102,102,.32);
 	font-size: 5em;
 	font-family: 'Roboto', sans-serif;
 	opacity: 40%;
-	border: 2em;
 }
 .ourworkdetails{
 	position: relative;
 }
 .ourworkdetails img{
+	position: relative;
 	width: 30%;
 	color: rgba(64,64,64,1);
 }
@@ -118,10 +116,10 @@ h1:before{
 	color: #007acc;
 }
 .ourworkdetails p{
+	float: right;
 	width: 40%;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: rgba(64,64,64,1);
 	background-color: rgba(149,149,149,.06);
-	margin: 1em;
 }
