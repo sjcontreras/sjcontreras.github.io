@@ -8,9 +8,12 @@ body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
 .clearfix:after{
-	content: "";
-	clear: both;
-	display: block;
+	visibility: hidden;
+ 	display: block;
+ 	font-size: 0;
+ 	content: " ";
+ 	clear: both;
+ 	height: 0;
 }
 header{
 	position: relative;
@@ -82,7 +85,6 @@ h1:before{
 	background: rgba(255,255,255,1);
 }
 .ourworkdetails h2{
-	position: relative;
 	text-align: left;
 	color: rgba(102,102,102,.32);
 	font-size: 5em;
@@ -93,8 +95,8 @@ h1:before{
 	position: relative;
 }
 .ourworkdetails img{
-	position: relative;
-	width: 30%;
+	float: left;
+	width: 40%;
 	color: rgba(64,64,64,1);
 }
 .ourworkdetails img:hover{
@@ -102,24 +104,31 @@ h1:before{
 }
 .ourworkdetails h3{
 	position: absolute;
-	right: 1em;
+	right: 10;
 	padding: .5em;
 	background: rgba(0,122,204,.58);
 	box-shadow: 2px 2px 3px rgba(121,182,222,1);
 	color: rgba(255,255,255,1);
+	font-size: 1em;
 	font-family: 'Roboto', sans-serif;
 }
-.ourworkdetails p:before{
-	display: block;
-	content: "\2014";
-	width: 10%;
-	color: #007acc;
-}
-.ourworkdetails p{
-	float: right;
+.ourworkdetails p{ 
+	float: left;
 	width: 40%;
+	margin: 10%;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: rgba(64,64,64,1);
 	background-color: rgba(149,149,149,.06);
+}
+.ourworkdetails p:before{
+	display: block;
+	content: "\2014";
+	color: #007acc;
+}
+.ourworkalignright img, p{
+	float: right;
+}
+.joinourteaminfo{
+	clear: both;
 }
