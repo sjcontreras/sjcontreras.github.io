@@ -57,12 +57,12 @@ h1:before{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-bottom:2em
+	margin-bottom:2em;
 }
 #story{
 	float: right;
 	padding: 2em;
-	background: #007acc;
+	background: rgba(0,122,204,1);
 	color: rgba(255,255,255,1);
 	width: 33.33%;
 	position: relative;
@@ -94,7 +94,7 @@ h1:before{
 	font-family: 'Roboto', sans-serif;
 	opacity: 40%;
 }
-.ourworkdetails{
+.ourworkdetails > div{
 	position: relative;
 }
 .ourworkdetails img{
@@ -111,48 +111,89 @@ h1:before{
 	background: rgba(0,122,204,.58);
 	box-shadow: 2px 2px 3px rgba(121,182,222,1);
 	color: rgba(255,255,255,1);
-	font-size: 1em;
+	font-size: 1.3em;
 	font-family: 'Roboto', sans-serif;
+	left: 35%;
 }
 .ourworkdetails p{ 
-	float: left;
 	width: 40%;
-	margin: 10%;
 	font-size: 1.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: rgba(64,64,64,1);
 	background-color: rgba(149,149,149,.06);
+	padding: 2em;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 .ourworkdetails p:before{
 	display: block;
 	content: "\2014";
 	color: #007acc;
+	text-align: center;
 }
-.ourworkalignright img, p{
+.ourworkalignright img{
 	float: right;
 }
+.ourworkalignright p{
+	left: 10%;
+}
+.ourworkalignright h3{
+	right: 35%;
+	left: initial;
+}
 .joinourteaminfo{
-	clear: both;
-	background-image: url(https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-image: url(https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	height: 14em;
+	margin-top: 2em;
+	text-align: center;
+	color: white;
+	padding-top: 4em;
+}
+.joinourteaminfo h2{
+	font-size: 3em;
+	background: rgba(0,122,204,.5);
+	padding: .3em;
+}
+.joinourteaminfo a{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	border: 1px solid rgb(255,255,255);
+	padding: 1em;
+	display: inline-block;
+	margin-top: 1em;
+	background-color: rgba(0,122,204,.5);
+}
+.joinourteaminfo a:hover{
+	color: rgba(0,122,204,1);
+	background: rgba(255,255,255,1);
 }
 footer{
-	background: rgba(102,102,102,0.43);
+	background: rgba(0,122,204,1);
+	width: 100%;
+	height: 10em;
+	color: white;
+}
+#footerimage{
+	width: 10%;
 	float: left;
+}
+footer img{
+	float: right;
+	width: 3.5%;
+	margin: 1em;
 }
 footer a{
 	text-decoration: none;
-	color: rgba(255,255,255,1);
-	margin: 1em;
-}
-footer img{
-	width: 3%;
-	float: right;
+	color: white;
 	margin: 1em;
 }
 footer p{
-	margin-top: 1em;
+	margin-top: 6em;
+	margin-bottom: 0;
 	text-align: center;
 }
