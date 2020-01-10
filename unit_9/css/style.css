@@ -182,7 +182,7 @@ footer{
 	overflow: hidden;
 	padding: 70px 0;
 	box-sizing: border-box;
-	background-color: rgba(0,122,204,1);
+	background-color: rgba(51,50,50,1);
 	color: white;
 }
 .innerfooter{
@@ -194,21 +194,21 @@ footer{
 	float: left;
 	width: 10%;
 	height: auto;
-	margin-left: 10%;
+	margin-left: 25%;
 }
 .footerthird{
 	float: left;
 	margin-left: 10%;
-	margin-bottom: 5em;
+	margin-bottom: 10%;
 }
 .footerthird h2{
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	margin-bottom: 10%;
 }
 .footerthird a{
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 16px;
+	font-size: 13px;
 	color: white;
 	display: block;
 	padding-bottom: 5%;
