@@ -186,8 +186,9 @@ h1:before{
 .innerfooter{
 	display: block;
 	margin: 0 auto;
-	width: 1100px;
-	height: 100%;
+	margin-left: 7em;
+	width: 100%;
+	height: 100%
 }
 .innerfooter .imagecontainer{
 	width: 35%;
@@ -196,12 +197,12 @@ h1:before{
 	display: block;
 }
 .innerfooter .imagecontainer img{
-	width: 10em;
+	width: 9em;
 	height: auto;
 }
 .innerfooter .footerthird{
 	width: calc(21.6666666667% - 20px);
-	margin-right: 5em;
+	margin-right: 7em;
 	float: left;
 	height: 100%;
 }
