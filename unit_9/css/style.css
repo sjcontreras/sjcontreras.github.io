@@ -88,7 +88,8 @@ h1:before{
 }
 .ourworkdetails h2{
 	text-align: left;
-	color: rgba(102,102,102,.32);
+	color: rgba(102,102,102,1);
+	text-shadow: 2px 2px 3px rgba(102,102,102,.5);
 	font-size: 5em;
 	margin-top: .5em;
 	margin-left: 1em;
