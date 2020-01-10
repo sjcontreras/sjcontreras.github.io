@@ -176,60 +176,43 @@ h1:before{
 	color: rgba(0,122,204,1);
 	background: rgba(255,255,255,1);
 }
-.footer{
+footer{
 	width: 100%;
 	display: block;
 	overflow: hidden;
 	padding: 70px 0;
 	box-sizing: border-box;
 	background-color: rgba(0,122,204,1);
+	color: white;
 }
 .innerfooter{
 	display: block;
-	margin: 0 auto;
-	margin-left: 7em;
+	margin-left: 25%;
 	width: 100%;
 	height: 100%
 }
-.innerfooter .imagecontainer{
-	width: 35%;
+.imagecontainer img{
 	float: left;
-	height: 100px;
-	display: block;
-}
-.innerfooter .imagecontainer img{
-	width: 9em;
+	width: 10%;
 	height: auto;
 }
-.innerfooter .footerthird{
-	width: calc(21.6666666667% - 20px);
-	margin-right: 7em;
+.footerthird{
 	float: left;
-	height: 100%;
-}
-.innerfooter .footerthird:last-child{
-	margin-right: 0;
 	margin-left: 7em;
 }
-.innerfooter .footerthird h2{
+.footerthird h2{
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
-	color: white;
-	display: block;
-	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 10%;
 }
-.innerfooter .footerthird a{
+.footerthird a{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 16px;
-	font-weight: 200;
 	color: white;
 	display: block;
-	width: 100%;
-	padding-bottom: 5px;
+	padding-bottom: 5%;
 }
-.innerfooter .footerthird li{
+.footerthird li{
 	display: inline-block;
-	margin: 0 12px;
-	margin-left: 0;
+	padding-right: 15%;
 }
