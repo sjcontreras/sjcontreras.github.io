@@ -150,7 +150,7 @@ h1:before{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 14em;
+	height: 20em;
 	margin-top: 2em;
 	text-align: center;
 	color: white;
@@ -159,7 +159,8 @@ h1:before{
 .joinourteaminfo h2{
 	font-size: 3em;
 	background: rgba(0,122,204,.5);
-	padding: .3em;
+	padding: .5em;
+	margin-top: 1em;
 }
 .joinourteaminfo a{
 	text-decoration: none;
