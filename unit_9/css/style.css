@@ -187,7 +187,6 @@ footer{
 }
 .innerfooter{
 	display: block;
-	margin-left: 25%;
 	width: 100%;
 	height: 100%
 }
@@ -195,10 +194,12 @@ footer{
 	float: left;
 	width: 10%;
 	height: auto;
+	margin-left: 5%;
 }
 .footerthird{
 	float: left;
 	margin-left: 7em;
+	margin-bottom: 5em;
 }
 .footerthird h2{
 	font-family: 'Roboto', sans-serif;
@@ -215,4 +216,10 @@ footer{
 .footerthird li{
 	display: inline-block;
 	padding-right: 15%;
+}
+footer p{
+	clear: both;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
 }
