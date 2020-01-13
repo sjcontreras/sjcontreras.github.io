@@ -207,3 +207,10 @@ footer p{
 	clear: both;
 	text-align: center;
 }
+
+@media only screen and (max-width: 1200px) {
+p{
+	float: none;
+	width: auto;
+	}
+}
