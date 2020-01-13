@@ -127,6 +127,12 @@ h1:before{
 	top: 50%;
 	transform: translateY(-50%);
 }
+@media only screen and (max-width: 1200px) {
+.ourworkdetails p{
+	float: none;
+	width: auto;
+	}
+}
 .ourworkdetails p:before{
 	display: block;
 	content: "\2014";
@@ -206,11 +212,4 @@ footer a{
 footer p{
 	clear: both;
 	text-align: center;
-}
-
-@media only screen and (max-width: 1200px) {
-p{
-	float: none;
-	width: auto;
-	}
 }
